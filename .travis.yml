@@ -7,4 +7,5 @@ install:
 - sudo pip install couchapp
 - couchapp push ./couchdb http://localhost:5984/TraduXio
 - gem install capybara-webkit rspec
-script: xvfb-run rspec spec/features/*
+script: 
+xvfb-run rspec spec/features/*
