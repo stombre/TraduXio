@@ -3,6 +3,7 @@
 feature 'Copyright translations' do
 
     scenario 'Free work, free and non-free translations' do
+	pending 'Need to create traduction'
         visit '/works'
         click_on 'en'
 		page.should have_author 'Howard Phillips Lovecraft'
@@ -15,6 +16,7 @@ feature 'Copyright translations' do
     end
     
     scenario 'Free work and non-free translation' do
+		pending 'Need to create traduction'
 		visit '/works'
 		click_on 'en'
 		click_on 'Howard Phillips Lovecraft'
@@ -25,6 +27,7 @@ feature 'Copyright translations' do
     end
 	
 	scenario 'No work and free translation' do
+		pending 'Need to create traduction'
 		visit '/works'
 		click_on 'gr'
 		click_on 'Anonyme'
@@ -33,6 +36,7 @@ feature 'Copyright translations' do
 	end
 	
 	scenario 'Non-free work and free translation' do
+		pending 'Need to create traduction'
 		visit '/works'
 		click_on 'fr'
 		page.should_not have_content 'NTM'

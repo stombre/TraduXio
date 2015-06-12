@@ -13,6 +13,7 @@ feature 'Create a translation' do
     end
 
     scenario 'Create a translation' do
+		pending 'Need to create traduction'
 		click_on '+'
 		fill_in 'title', :with => 'Le Corbeau'
 		click_on 'Choose your language', :with => 'Français'

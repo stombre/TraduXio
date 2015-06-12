@@ -3,6 +3,7 @@
 feature 'Search for a concordance' do
 
 	scenario 'Search a valid sequence of words' do
+		pending 'Need to create traduction'
 		visit '/concordance'
 		click_on 'The lamp (Fungi from Yuggoth, 6)'
 		fill_in 'query', :with => 'the ancient oil'
@@ -13,6 +14,7 @@ feature 'Search for a concordance' do
 	end
 	
 	scenario 'Search a sequence of words in the wrong order' do
+		pending 'Need to create traduction'
 		visit '/concordance'
 		click_on 'The lamp (Fungi from Yuggoth, 6)'
 		fill_in 'query', :with => 'ancient the'
@@ -22,6 +24,7 @@ feature 'Search for a concordance' do
 	end
 	
 	scenario 'Search the beginning of a word' do
+		pending 'Need to create traduction'
 		visit '/concordance'
 		click_on 'The lamp (Fungi from Yuggoth, 6)'
 		fill_in 'query', :with => 'anc'
